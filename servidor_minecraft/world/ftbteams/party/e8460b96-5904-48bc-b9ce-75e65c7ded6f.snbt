@@ -1,0 +1,33 @@
+{
+	id: "e8460b96-5904-48bc-b9ce-75e65c7ded6f"
+	type: "party"
+	owner: "06ce88a1-d626-31bb-907c-f1f610de0f93"
+	ranks: {
+		06ce88a1-d626-31bb-907c-f1f610de0f93: "owner"
+		088e63f7-2470-3149-9969-d09ec93dc472: "member"
+	}
+	properties: {
+		"ftbteams:display_name": "jonin's Party"
+		"ftbteams:description": ""
+		"ftbteams:color": "#E1FF59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+		"ftbchunks:allow_explosions": 0b
+		"ftbchunks:allow_mob_griefing": 0b
+		"ftbchunks:allow_fake_players": 0b
+		"ftbchunks:allow_named_fake_players": [ ]
+		"ftbchunks:allow_fake_players_by_id": 1b
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbchunks:entity_interact_mode": "allies"
+		"ftbchunks:nonliving_entity_attack_mode": "allies"
+		"ftbchunks:claim_visibility": "public"
+		"ftbchunks:location_mode": "allies"
+	}
+	message_history: [
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1782631723472L, text: "{\"color\":\"yellow\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"jonin\"}]}" }
+		{ from: "06ce88a1-d626-31bb-907c-f1f610de0f93", date: 1782631723476L, text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.invited\",\"with\":[{\"color\":\"yellow\",\"text\":\"MrAgic_YT\"}]}" }
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1782631725757L, text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"MrAgic_YT\"}]}" }
+	]
+	extra: { }
+}

@@ -1,0 +1,582 @@
+[28Jun2026 08:25:42.983] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.4.2, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
+[28Jun2026 08:25:42.993] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.19 by Ubuntu; OS Linux arch amd64 version 6.8.0-1052-azure
+[28Jun2026 08:25:44.345] [main/INFO] [gg.essential.loader.stage1.EssentialLoaderBase/]: Updating Essential Loader (stage2) version 1.7.4 (ee316308052751b5ace6e379c769b0dc) from union:/workspaces/mcclgb/servidor_minecraft/mods/Essential_1-3-10-8_forge_1-19-2.jar%23222!/essential-loader-stage2-modlauncher9-1.7.4.jar
+[28Jun2026 08:25:44.351] [main/FATAL] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Encountered serious error loading transformation service, expect problems
+java.util.ServiceConfigurationError: cpw.mods.modlauncher.api.ITransformationService: Provider gg.essential.container.loader.stage0.EssentialTransformationService could not be instantiated
+	at java.util.ServiceLoader.fail(ServiceLoader.java:586) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:813) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:729) ~[?:?]
+	at cpw.mods.modlauncher.util.ServiceLoaderUtils.lambda$streamWithErrorHandling$0(ServiceLoaderUtils.java:39) ~[modlauncher-10.0.8.jar%2354!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) [?:?]
+	at java.util.ServiceLoader$ProviderSpliterator.tryAdvance(ServiceLoader.java:1499) [?:?]
+	at java.util.Spliterator.forEachRemaining(Spliterator.java:332) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) [?:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.discoverServices(TransformationServicesHandler.java:133) [modlauncher-10.0.8.jar%2354!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:86) [modlauncher-10.0.8.jar%2354!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2354!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2354!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2354!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:27) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1(EssentialTransformationServiceBase.java:47) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:25) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/codec/digest/DigestUtils
+	at gg.essential.loader.stage1.EssentialLoaderBase.getChecksum(EssentialLoaderBase.java:356) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.downloadFile(EssentialLoaderBase.java:473) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.doDownload(EssentialLoaderBase.java:326) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.load(EssentialLoaderBase.java:176) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:46) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationService.<init>(EssentialTransformationService.java:28) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1(EssentialTransformationServiceBase.java:47) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:25) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.codec.digest.DigestUtils
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.getChecksum(EssentialLoaderBase.java:356) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.downloadFile(EssentialLoaderBase.java:473) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.doDownload(EssentialLoaderBase.java:326) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.load(EssentialLoaderBase.java:176) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:46) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationService.<init>(EssentialTransformationService.java:28) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1(EssentialTransformationServiceBase.java:47) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:25) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+[28Jun2026 08:25:44.536] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mcclgb/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2363!/ Service=ModLauncher Env=SERVER
+[28Jun2026 08:25:45.170] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mcclgb/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.19.2-43.4.2/fmlcore-1.19.2-43.4.2.jar is missing mods.toml file
+[28Jun2026 08:25:45.171] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mcclgb/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.19.2-43.4.2/javafmllanguage-1.19.2-43.4.2.jar is missing mods.toml file
+[28Jun2026 08:25:45.172] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mcclgb/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.19.2-43.4.2/lowcodelanguage-1.19.2-43.4.2.jar is missing mods.toml file
+[28Jun2026 08:25:45.173] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mcclgb/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.19.2-43.4.2/mclanguage-1.19.2-43.4.2.jar is missing mods.toml file
+[28Jun2026 08:25:45.623] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
+[28Jun2026 08:25:45.625] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 13 dependencies adding them to mods collection
+[28Jun2026 08:25:49.054] [main/ERROR] [mixin/]: Mixin config dynamiclightsreforged.mixins.json does not specify "minVersion" property
+[28Jun2026 08:25:49.064] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[28Jun2026 08:25:49.095] [main/ERROR] [mixin/]: Mixin config firstperson.mixins.json does not specify "minVersion" property
+[28Jun2026 08:25:49.099] [main/ERROR] [mixin/]: Mixin config obsidianui.forge.mixins.json does not specify "minVersion" property
+[28Jun2026 08:25:49.149] [main/ERROR] [mixin/]: Mixin config cameraoverhaul.mixins.json does not specify "minVersion" property
+[28Jun2026 08:25:49.205] [main/ERROR] [mixin/]: Mixin config no_f3.mixin.json does not specify "minVersion" property
+[28Jun2026 08:25:49.260] [main/ERROR] [mixin/]: Mixin config okzoomer.mixins.json does not specify "minVersion" property
+[28Jun2026 08:25:49.412] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [com.sonicether.soundphysics.MixinConnector]
+[28Jun2026 08:25:49.414] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[28Jun2026 08:25:49.460] [main/INFO] [com.abdelaziz.saturn.common.Saturn/]: Loaded Saturn config file with 4 configurable options
+[28Jun2026 08:25:49.474] [main/WARN] [mixin/]: Reference map 'v_slab_compat-common-refmap.json' for v_slab_compat-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Jun2026 08:25:49.481] [main/WARN] [mixin/]: Reference map 'parcool_compat_addon.refmap.json' for parcool_compat_addon.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Jun2026 08:25:49.521] [main/INFO] [Rubidium/]: Loaded configuration file for Rubidium: 30 options available, 0 override(s) found
+[28Jun2026 08:25:49.641] [main/WARN] [ModernFixConfig/]: ModelDataManager bugfixes have been disabled to prevent broken rendering with Rubidium installed. Please migrate to Embeddium.
+[28Jun2026 08:25:49.648] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.18.1+mc1.19.2: 87 options available, 1 override(s) found
+[28Jun2026 08:25:49.650] [main/WARN] [ModernFix/]: Option 'mixin.bugfix.model_data_manager_cme' overriden (by mods [rubidium]) to 'false'
+[28Jun2026 08:25:49.651] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[28Jun2026 08:25:49.671] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[28Jun2026 08:25:49.801] [main/WARN] [mixin/]: Reference map 'spelunkery-forge-refmap.json' for spelunkery.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Jun2026 08:25:49.816] [main/WARN] [mixin/]: Reference map 'ambientsounds.mixins.refmap.json' for ambientsounds.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Jun2026 08:25:50.950] [main/WARN] [mixin/]: Error loading class: umpaz/brewinandchewin/common/block/entity/KegBlockEntity (java.lang.ClassNotFoundException: umpaz.brewinandchewin.common.block.entity.KegBlockEntity)
+[28Jun2026 08:25:50.951] [main/WARN] [mixin/]: @Mixin target umpaz.brewinandchewin.common.block.entity.KegBlockEntity was not found thirst.mixin.json:accessors.brewinandchewin.KegBlockEntityAccessor
+[28Jun2026 08:25:50.955] [main/WARN] [mixin/]: Error loading class: umpaz/farmersrespite/common/block/entity/KettleBlockEntity (java.lang.ClassNotFoundException: umpaz.farmersrespite.common.block.entity.KettleBlockEntity)
+[28Jun2026 08:25:50.956] [main/WARN] [mixin/]: @Mixin target umpaz.farmersrespite.common.block.entity.KettleBlockEntity was not found thirst.mixin.json:accessors.farmersrespite.KettleBlockEntityAccessor
+[28Jun2026 08:25:50.957] [main/WARN] [mixin/]: Error loading class: net/mehvahdjukaar/supplementaries/common/block/faucet/FaucetBehaviorsManager (java.lang.ClassNotFoundException: net.mehvahdjukaar.supplementaries.common.block.faucet.FaucetBehaviorsManager)
+[28Jun2026 08:25:50.958] [main/WARN] [mixin/]: @Mixin target net.mehvahdjukaar.supplementaries.common.block.faucet.FaucetBehaviorsManager was not found thirst.mixin.json:accessors.supplementaries.FaucetBehaviorsManagerAccessor
+[28Jun2026 08:25:50.960] [main/WARN] [mixin/]: Error loading class: umpaz/brewinandchewin/common/block/entity/KegBlockEntity (java.lang.ClassNotFoundException: umpaz.brewinandchewin.common.block.entity.KegBlockEntity)
+[28Jun2026 08:25:50.960] [main/WARN] [mixin/]: @Mixin target umpaz.brewinandchewin.common.block.entity.KegBlockEntity was not found thirst.mixin.json:brewinandchewin.MixinKegBlockEntity
+[28Jun2026 08:25:50.962] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/processing/basin/BasinRecipe (java.lang.ClassNotFoundException: com.simibubi.create.content.processing.basin.BasinRecipe)
+[28Jun2026 08:25:50.963] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.processing.basin.BasinRecipe was not found thirst.mixin.json:create.MixinBasinRecipe
+[28Jun2026 08:25:50.966] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/fluids/spout/FillingBySpout (java.lang.ClassNotFoundException: com.simibubi.create.content.fluids.spout.FillingBySpout)
+[28Jun2026 08:25:50.967] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.fluids.spout.FillingBySpout was not found thirst.mixin.json:create.MixinFillingBySpout
+[28Jun2026 08:25:50.968] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/fluids/transfer/FluidDrainingBehaviour (java.lang.ClassNotFoundException: com.simibubi.create.content.fluids.transfer.FluidDrainingBehaviour)
+[28Jun2026 08:25:50.969] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.fluids.transfer.FluidDrainingBehaviour was not found thirst.mixin.json:create.MixinFluidDrainingBehaviour
+[28Jun2026 08:25:50.970] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/fluids/transfer/GenericItemEmptying (java.lang.ClassNotFoundException: com.simibubi.create.content.fluids.transfer.GenericItemEmptying)
+[28Jun2026 08:25:50.971] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.fluids.transfer.GenericItemEmptying was not found thirst.mixin.json:create.MixinGenericItemEmptying
+[28Jun2026 08:25:50.972] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/fluids/transfer/GenericItemFilling (java.lang.ClassNotFoundException: com.simibubi.create.content.fluids.transfer.GenericItemFilling)
+[28Jun2026 08:25:50.972] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.fluids.transfer.GenericItemFilling was not found thirst.mixin.json:create.MixinGenericItemFilling
+[28Jun2026 08:25:50.976] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/equipment/goggles/IHaveGoggleInformation (java.lang.ClassNotFoundException: com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation)
+[28Jun2026 08:25:50.976] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation was not found thirst.mixin.json:create.MixinIHaveGoggleInformation
+[28Jun2026 08:25:50.977] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/fluids/OpenEndedPipe (java.lang.ClassNotFoundException: com.simibubi.create.content.fluids.OpenEndedPipe)
+[28Jun2026 08:25:50.978] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.fluids.OpenEndedPipe was not found thirst.mixin.json:create.MixinOpenEndedPipe
+[28Jun2026 08:25:50.980] [main/WARN] [mixin/]: Error loading class: plus/dragons/createcentralkitchen/content/logistics/block/mechanicalArm/KettlePoint (java.lang.ClassNotFoundException: plus.dragons.createcentralkitchen.content.logistics.block.mechanicalArm.KettlePoint)
+[28Jun2026 08:25:50.980] [main/WARN] [mixin/]: @Mixin target plus.dragons.createcentralkitchen.content.logistics.block.mechanicalArm.KettlePoint was not found thirst.mixin.json:createcenterkitchen.MixinKettlePoint
+[28Jun2026 08:25:50.981] [main/WARN] [mixin/]: Error loading class: umpaz/farmersrespite/common/block/KettleBlock (java.lang.ClassNotFoundException: umpaz.farmersrespite.common.block.KettleBlock)
+[28Jun2026 08:25:50.981] [main/WARN] [mixin/]: @Mixin target umpaz.farmersrespite.common.block.KettleBlock was not found thirst.mixin.json:farmersrespite.MixinKettleBlock
+[28Jun2026 08:25:50.984] [main/WARN] [mixin/]: Error loading class: umpaz/farmersrespite/common/block/entity/KettleBlockEntity (java.lang.ClassNotFoundException: umpaz.farmersrespite.common.block.entity.KettleBlockEntity)
+[28Jun2026 08:25:50.985] [main/WARN] [mixin/]: @Mixin target umpaz.farmersrespite.common.block.entity.KettleBlockEntity was not found thirst.mixin.json:farmersrespite.MixinKettleBlockEntity
+[28Jun2026 08:25:50.986] [main/WARN] [mixin/]: Error loading class: snownee/jade/api/view/FluidView (java.lang.ClassNotFoundException: snownee.jade.api.view.FluidView)
+[28Jun2026 08:25:50.986] [main/WARN] [mixin/]: @Mixin target snownee.jade.api.view.FluidView was not found thirst.mixin.json:jade.MixinFluidView
+[28Jun2026 08:25:50.987] [main/WARN] [mixin/]: Error loading class: net/mehvahdjukaar/supplementaries/common/block/faucet/WaterBlockInteraction (java.lang.ClassNotFoundException: net.mehvahdjukaar.supplementaries.common.block.faucet.WaterBlockInteraction)
+[28Jun2026 08:25:50.987] [main/WARN] [mixin/]: @Mixin target net.mehvahdjukaar.supplementaries.common.block.faucet.WaterBlockInteraction was not found thirst.mixin.json:supplementaries.MixinWaterBlockInteraction
+[28Jun2026 08:25:50.987] [main/WARN] [mixin/]: Error loading class: toughasnails/item/EmptyCanteenItem (java.lang.ClassNotFoundException: toughasnails.item.EmptyCanteenItem)
+[28Jun2026 08:25:50.988] [main/WARN] [mixin/]: @Mixin target toughasnails.item.EmptyCanteenItem was not found thirst.mixin.json:toughasnails.MixinEmptyCanteenItem
+[28Jun2026 08:25:50.988] [main/WARN] [mixin/]: Error loading class: toughasnails/config/ServerConfig (java.lang.ClassNotFoundException: toughasnails.config.ServerConfig)
+[28Jun2026 08:25:50.988] [main/WARN] [mixin/]: @Mixin target toughasnails.config.ServerConfig was not found thirst.mixin.json:toughasnails.MixinServerConfig
+[28Jun2026 08:25:50.989] [main/WARN] [mixin/]: Error loading class: toughasnails/thirst/ThirstHandler (java.lang.ClassNotFoundException: toughasnails.thirst.ThirstHandler)
+[28Jun2026 08:25:50.989] [main/WARN] [mixin/]: @Mixin target toughasnails.thirst.ThirstHandler was not found thirst.mixin.json:toughasnails.MixinThirstHandler
+[28Jun2026 08:25:50.990] [main/WARN] [mixin/]: Error loading class: toughasnails/thirst/ThirstHelperImpl (java.lang.ClassNotFoundException: toughasnails.thirst.ThirstHelperImpl)
+[28Jun2026 08:25:50.990] [main/WARN] [mixin/]: @Mixin target toughasnails.thirst.ThirstHelperImpl was not found thirst.mixin.json:toughasnails.MixinThirstHelperImpl
+[28Jun2026 08:25:51.315] [main/WARN] [mixin/]: Error loading class: com/mojang/blaze3d/platform/InputConstants$Key (java.lang.ClassNotFoundException: com.mojang.blaze3d.platform.InputConstants$Key)
+[28Jun2026 08:25:51.322] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Camera for invalid dist DEDICATED_SERVER
+[28Jun2026 08:25:51.322] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/Camera (java.lang.RuntimeException: Attempted to load class net/minecraft/client/Camera for invalid dist DEDICATED_SERVER)
+[28Jun2026 08:25:51.322] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.Camera was not found cameraoverhaul.mixins.json:CameraMixin
+[28Jun2026 08:25:51.327] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/renderer/GameRenderer for invalid dist DEDICATED_SERVER
+[28Jun2026 08:25:51.328] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/renderer/GameRenderer (java.lang.RuntimeException: Attempted to load class net/minecraft/client/renderer/GameRenderer for invalid dist DEDICATED_SERVER)
+[28Jun2026 08:25:51.328] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.renderer.GameRenderer was not found cameraoverhaul.mixins.json:GameRendererMixin
+[28Jun2026 08:25:51.331] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/player/LocalPlayer for invalid dist DEDICATED_SERVER
+[28Jun2026 08:25:51.332] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/player/LocalPlayer (java.lang.RuntimeException: Attempted to load class net/minecraft/client/player/LocalPlayer for invalid dist DEDICATED_SERVER)
+[28Jun2026 08:25:51.332] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.player.LocalPlayer was not found cameraoverhaul.mixins.json:LocalPlayerMixin
+[28Jun2026 08:25:51.430] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[28Jun2026 08:25:52.551] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (12.38 s after launch)
+[28Jun2026 08:25:52.835] [main/WARN] [mixin/]: @Final field delegatesByName:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[28Jun2026 08:25:52.836] [main/WARN] [mixin/]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[28Jun2026 08:25:55.805] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 3247 milliseconds
+[28Jun2026 08:25:58.013] [main/WARN] [mixin/]: Static binding violation: PRIVATE @Overwrite method m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[28Jun2026 08:25:58.015] [main/WARN] [mixin/]: Method overwrite conflict for m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin, previously written by com.abdelaziz.saturn.mixin.leaks.biome_temperature_cache.BiomeMixin. Skipping method.
+[28Jun2026 08:25:59.281] [modloading-worker-0/INFO] [dynamiclightsreforged/]: [LambDynLights] Initializing Dynamic Lights Reforged...
+[28Jun2026 08:25:59.346] [modloading-worker-0/INFO] [atomicstryker.multimine.common.MultiMine/]: mod instantiated
+[28Jun2026 08:25:59.353] [modloading-worker-0/INFO] [atomicstryker.multimine.common.MultiMine/]: MultiMineServer initializing
+[28Jun2026 08:25:59.529] [modloading-worker-0/INFO] [de.keksuccino.melody.Melody/]: [MELODY] Disabling Melody since it's loaded server-side.
+[28Jun2026 08:25:59.555] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: [KONKRETE] Successfully initialized!
+[28Jun2026 08:25:59.556] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: [KONKRETE] Server-side libs ready to use!
+[28Jun2026 08:25:59.774] [modloading-worker-0/INFO] [Collective/]: Loading Collective version 7.64.
+[28Jun2026 08:25:59.969] [modloading-worker-0/INFO] [com.cupboard.Cupboard/]: Loaded config for: cupboard.json
+[28Jun2026 08:26:00.053] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[28Jun2026 08:26:00.115] [modloading-worker-0/INFO] [de.nekeras.borderless.BorderlessWindow/]: Creating mod instance
+[28Jun2026 08:26:00.120] [modloading-worker-0/INFO] [de.nekeras.borderless.BorderlessWindow/]: Enable server compatibility
+[28Jun2026 08:26:00.125] [modloading-worker-0/INFO] [de.nekeras.borderless.BorderlessWindow/]: Register client configuration
+[28Jun2026 08:26:00.158] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftblibrary:edit_nbt_response
+[28Jun2026 08:26:00.203] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:open_gui
+[28Jun2026 08:26:00.206] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:update_settings
+[28Jun2026 08:26:00.210] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:send_message
+[28Jun2026 08:26:00.223] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:create_party
+[28Jun2026 08:26:00.225] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:player_gui_operation
+[28Jun2026 08:26:00.308] [modloading-worker-0/INFO] [Kiwi/Init]: Processing 5 KiwiModule annotations
+[28Jun2026 08:26:00.322] [modloading-worker-0/INFO] [Kiwi/]: Loading config from file: /workspaces/mcclgb/servidor_minecraft/config/passablefoliage-common.toml
+[28Jun2026 08:26:00.358] [modloading-worker-0/INFO] [Kiwi/]: Loading config from file: /workspaces/mcclgb/servidor_minecraft/config/snowrealmagic-common.toml
+[28Jun2026 08:26:00.373] [modloading-worker-0/INFO] [Puzzles Lib/]: Constructing common components for mod visualworkbench
+[28Jun2026 08:26:00.597] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:request_map_data
+[28Jun2026 08:26:00.599] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.4.2, for MC 1.19.2 with MCP 20220805.130853
+[28Jun2026 08:26:00.600] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.4.2 Initialized
+[28Jun2026 08:26:00.600] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:request_chunk_change
+[28Jun2026 08:26:00.604] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:teleport_from_map
+[28Jun2026 08:26:00.608] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:sync_tx
+[28Jun2026 08:26:00.624] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:update_force_load_expiry
+[28Jun2026 08:26:00.629] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:server_config_request
+[28Jun2026 08:26:00.689] [modloading-worker-0/INFO] [de.keksuccino.drippyloadingscreen.DrippyLoadingScreen/]: [DRIPPY LOADING SCREEN] Loading v3.0.12 in server-side mode on FORGE!
+[28Jun2026 08:26:00.697] [modloading-worker-0/INFO] [FTB Chunks/]: Mod [FTB XMod Compat] not detected. Install it if you want FTB Chunks integration with KubeJS, Game Stages, Waystones, FTB Ranks/Luckperms and/or Common Protection API
+[28Jun2026 08:26:01.152] [modloading-worker-0/INFO] [de.keksuccino.fancymenu.FancyMenu/]: [FANCYMENU] Loading v3.7.0 in server-side mode on FORGE!
+[28Jun2026 08:26:01.242] [modloading-worker-0/INFO] [Puzzles Lib/]: Constructing common components for mod puzzleslib
+[28Jun2026 08:26:03.342] [main/INFO] [net.mehvahdjukaar.vsc.VSC/]: Initialized slab sets in: 7 ms
+[28Jun2026 08:26:03.351] [main/INFO] [moonlight/]: Initialized block sets in 23ms
+[28Jun2026 08:26:04.008] [modloading-worker-0/INFO] [com.lothrazar.fragiletorches.ModFragileTorches/]: Fragile torges loaded targeting block data tag 'fragiletorches:fragile'
+[28Jun2026 08:26:04.062] [modloading-worker-0/INFO] [Kiwi/]: Loading config from file: /workspaces/mcclgb/servidor_minecraft/config/passablefoliage-common.toml
+[28Jun2026 08:26:04.066] [modloading-worker-0/INFO] [Kiwi/]: Loading config from file: /workspaces/mcclgb/servidor_minecraft/config/snowrealmagic-common.toml
+[28Jun2026 08:26:04.078] [modloading-worker-0/INFO] [snowrealmagic/]: SereneSeasons detected. Overriding melting behavior.
+[28Jun2026 08:26:04.136] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Compatibility version 20
+[28Jun2026 08:26:04.199] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [saturn] Starting version check at https://github.com/AbdElAziz333/Saturn/raw/mc1.20.1/dev/updates.json
+[28Jun2026 08:26:04.270] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loading plugins
+[28Jun2026 08:26:04.302] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loaded 1 plugin(s)
+[28Jun2026 08:26:04.305] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initializing plugins
+[28Jun2026 08:26:04.313] [modloading-worker-0/INFO] [com.biomemusic.BiomeMusic/]: biomemusic mod initialized
+[28Jun2026 08:26:04.334] [modloading-worker-0/INFO] [Sound Physics - General/]: Initializing Simple Voice Chat integration
+[28Jun2026 08:26:04.334] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initialized 1 plugin(s)
+[28Jun2026 08:26:04.342] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Registering events for 'sound_physics_remastered'
+[28Jun2026 08:26:04.557] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar%2370!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) [fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:384) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar%2370!/:?]
+	... 6 more
+[28Jun2026 08:26:04.563] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [prism] Starting version check at https://mc-update-check.anthonyhilyard.com/638111
+[28Jun2026 08:26:04.577] [Thread-0/INFO] [ModernFix/]: Please use /mfsrc to reload any changed mod config files
+[28Jun2026 08:26:04.844] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [prism] Found status: UP_TO_DATE Current: 1.0.2 Target: null
+[28Jun2026 08:26:04.848] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [guardvillagers] Starting version check at https://raw.githubusercontent.com/seymourimadeit/guardvillagers/master/update.json
+[28Jun2026 08:26:04.918] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [guardvillagers] Found status: AHEAD Current: 1.19.2-1.5.9 Target: null
+[28Jun2026 08:26:04.918] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [fragiletorches] Starting version check at https://raw.githubusercontent.com/Lothrazar/FragileTorches/trunk/1.19/update.json
+[28Jun2026 08:26:04.934] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [fragiletorches] Found status: BETA Current: 1.19-1.0.2 Target: null
+[28Jun2026 08:26:04.934] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [additionalstructures] Starting version check at https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/AdditionalStructures.json
+[28Jun2026 08:26:04.946] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [additionalstructures] Found status: UP_TO_DATE Current: 4.0.4 Target: null
+[28Jun2026 08:26:04.946] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cameraoverhaul] Starting version check at https://github.com/Mirsario/Minecraft-CameraOverhaul/blob/dev/meta/ForgeUpdateCheck.json?raw=true
+[28Jun2026 08:26:04.966] [modloading-worker-0/INFO] [ModernFix/]: Bypassed Mojang DFU
+[28Jun2026 08:26:04.966] [modloading-worker-0/INFO] [com.sk89q.worldedit.extension.platform.PlatformManager/]: Got request to register class com.sk89q.worldedit.forge.ForgePlatform with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@16bfb2fc]
+[28Jun2026 08:26:04.972] [modloading-worker-0/INFO] [com.sk89q.worldedit.forge.ForgeWorldEdit/]: WorldEdit for Forge (version 7.2.12+6240-87f4ae1) is loaded
+[28Jun2026 08:26:04.985] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cameraoverhaul] Found status: UP_TO_DATE Current: 2.0.6-forge+mc.1.19.0-1.19.2 Target: null
+[28Jun2026 08:26:04.985] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [corpse] Starting version check at https://update.maxhenkel.de/forge/corpse
+[28Jun2026 08:26:05.034] [main/INFO] [com.ordana.immersive_weathering.ImmersiveWeathering/]: Finished mod setup in: [0, 0, 17, 9] ms
+[28Jun2026 08:26:05.103] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:shoot_cool_down for minecraft:living_entity
+[28Jun2026 08:26:05.104] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:melee_cool_down for minecraft:living_entity
+[28Jun2026 08:26:05.104] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:reload_state for minecraft:living_entity
+[28Jun2026 08:26:05.104] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:aiming_progress for minecraft:living_entity
+[28Jun2026 08:26:05.105] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:draw_cool_down for minecraft:living_entity
+[28Jun2026 08:26:05.105] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_aiming for minecraft:living_entity
+[28Jun2026 08:26:05.105] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:sprint_time for minecraft:living_entity
+[28Jun2026 08:26:05.105] [main/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_bolting for minecraft:living_entity
+[28Jun2026 08:26:05.149] [main/INFO] [moonlight/]: Initialized color sets in 37ms
+[28Jun2026 08:26:05.171] [main/INFO] [moonlight/]: Initialized color sets in 20ms
+[28Jun2026 08:26:05.507] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [corpse] Found status: AHEAD Current: 1.19.2-1.0.17 Target: null
+[28Jun2026 08:26:05.508] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_sapling_tweaks] Starting version check at https://api.modrinth.com/updates/MeOnuhOt/forge_updates.json
+[28Jun2026 08:26:05.665] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_sapling_tweaks] Found status: OUTDATED Current: 1 Target: 1+mod
+[28Jun2026 08:26:05.666] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwfurnitures] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/furniture.json
+[28Jun2026 08:26:05.683] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwfurnitures] Found status: UP_TO_DATE Current: 3.4.1 Target: null
+[28Jun2026 08:26:05.683] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [fastleafdecay] Starting version check at https://www.olafkeijsers.net/fastleafdecay-update.json
+[28Jun2026 08:26:05.770] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[28Jun2026 08:26:06.129] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/workspaces/mcclgb/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23347!/assets/.mcassetsroot' uses unexpected schema
+[28Jun2026 08:26:06.130] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/workspaces/mcclgb/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23347!/data/.mcassetsroot' uses unexpected schema
+[28Jun2026 08:26:06.518] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+javax.net.ssl.SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:905) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:139) ~[fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:177) ~[fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) [fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+Caused by: javax.net.ssl.SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at sun.security.ssl.Alert.createSSLException(Alert.java:131) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:383) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:326) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:321) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1294) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1169) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1112) ~[?:?]
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396) ~[?:?]
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:481) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1278) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1265) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:712) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1210) ~[?:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(SSLFlowDelegate.java:1141) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:174) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(SSLFlowDelegate.java:1136) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate.java:1102) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:503) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete(SequentialScheduler.java:347) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:151) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:369) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:275) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1272) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1169) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1112) ~[?:?]
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396) ~[?:?]
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:481) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1278) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1265) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:712) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1210) ~[?:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(SSLFlowDelegate.java:1141) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:174) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(SSLFlowDelegate.java:1136) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate.java:1102) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:503) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete(SequentialScheduler.java:347) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:151) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.security.cert.CertPathValidatorException: validity check failed
+	at sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:135) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:224) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:144) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:83) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:364) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:275) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1272) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1169) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1112) ~[?:?]
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396) ~[?:?]
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:481) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1278) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1265) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:712) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1210) ~[?:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(SSLFlowDelegate.java:1141) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:174) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(SSLFlowDelegate.java:1136) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate.java:1102) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:503) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete(SequentialScheduler.java:347) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:151) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.security.cert.CertificateExpiredException: NotAfter: Sun Dec 21 23:48:07 UTC 2025
+	at sun.security.x509.CertificateValidity.valid(CertificateValidity.java:274) ~[?:?]
+	at sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:621) ~[?:?]
+	at sun.security.provider.certpath.BasicChecker.verifyValidity(BasicChecker.java:190) ~[?:?]
+	at sun.security.provider.certpath.BasicChecker.check(BasicChecker.java:144) ~[?:?]
+	at sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:224) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:144) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:83) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:364) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:275) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1272) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1169) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1112) ~[?:?]
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396) ~[?:?]
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:481) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1278) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1265) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:712) ~[?:?]
+	at sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1210) ~[?:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(SSLFlowDelegate.java:1141) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:174) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(SSLFlowDelegate.java:1136) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate.java:1102) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:503) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete(SequentialScheduler.java:347) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:151) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[28Jun2026 08:26:06.531] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [visualworkbench] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/visualworkbench.json
+[28Jun2026 08:26:06.545] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [visualworkbench] Found status: UP_TO_DATE Current: 4.2.4 Target: null
+[28Jun2026 08:26:06.546] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [clumps] Starting version check at https://updates.blamejared.com/get?n=clumps&gv=1.19.2
+[28Jun2026 08:26:06.863] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [clumps] Found status: BETA Current: 9.0.0+14 Target: 9.0.0+14
+[28Jun2026 08:26:06.863] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configured] Starting version check at https://mrcrayfish.com/modupdatejson?id=configured
+[28Jun2026 08:26:06.990] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar%2370!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) [fmlcore-1.19.2-43.4.2.jar%23348!/:?]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:384) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.9.jar%2370!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar%2370!/:?]
+	... 6 more
+[28Jun2026 08:26:06.991] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [badmobs] Starting version check at https://updates.blamejared.com/get?n=badmobs&gv=1.19.2
+[28Jun2026 08:26:07.094] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [badmobs] Found status: BETA Current: 16.1.3 Target: 16.1.3
+[28Jun2026 08:26:07.094] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [crafttweaker] Starting version check at https://updates.blamejared.com/get?n=crafttweaker&gv=1.19.2
+[28Jun2026 08:26:07.191] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [crafttweaker] Found status: BETA Current: 10.1.56 Target: 10.1.56
+[28Jun2026 08:26:07.191] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[28Jun2026 08:26:07.271] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 43.4.2 Target: 43.5.0
+[28Jun2026 08:26:07.272] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Starting version check at https://update.maxhenkel.de/forge/voicechat
+[28Jun2026 08:26:07.370] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Found status: OUTDATED Current: 1.19.2-2.6.16 Target: 1.19.2-2.6.20
+[28Jun2026 08:26:07.370] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [sound_physics_remastered] Starting version check at https://update.maxhenkel.de/forge/sound_physics_remastered
+[28Jun2026 08:26:07.467] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [sound_physics_remastered] Found status: AHEAD Current: 1.19.2-1.4.5 Target: null
+[28Jun2026 08:26:07.467] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Moonlight/multi-loader/forge/update.json
+[28Jun2026 08:26:07.481] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Found status: UP_TO_DATE Current: 1.19.2-2.3.7 Target: null
+[28Jun2026 08:26:07.481] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [iceberg] Starting version check at https://mc-update-check.anthonyhilyard.com/520110
+[28Jun2026 08:26:07.512] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [iceberg] Found status: BETA Current: 1.1.4 Target: null
+[28Jun2026 08:26:07.513] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [puzzleslib] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/puzzleslib.json
+[28Jun2026 08:26:07.524] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [puzzleslib] Found status: UP_TO_DATE Current: 4.4.3 Target: null
+[28Jun2026 08:26:07.524] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [presencefootsteps] Starting version check at https://forge.curseupdate.com/433068/presencefootsteps
+[28Jun2026 08:26:07.620] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [presencefootsteps] Found status: UP_TO_DATE Current: 1.19.2-1.6.4.1 Target: null
+[28Jun2026 08:26:10.428] [main/INFO] [net.mehvahdjukaar.vsc.VSC/]: Generated runtime SERVER_DATA for pack V Slab Compat Generated Pack in: 32 ms
+[28Jun2026 08:26:10.466] [main/INFO] [com.ordana.immersive_weathering.ImmersiveWeathering/]: Generated runtime SERVER_DATA for pack Immersive Weathering Generated Pack in: 37 ms
+[28Jun2026 08:26:10.513] [main/INFO] [com.ordana.spelunkery.Spelunkery/]: Generated runtime SERVER_DATA for pack Spelunkery Generated Pack in: 46 ms
+[28Jun2026 08:26:14.642] [main/INFO] [com.sk89q.worldedit.extension.platform.PlatformCommandManager/]: Registering commands with com.sk89q.worldedit.forge.ForgePlatform
+[28Jun2026 08:26:14.697] [main/INFO] [FTB Ranks/]: Loading command nodes...
+[28Jun2026 08:26:14.775] [main/INFO] [FTB Ranks/]: Loaded 2279 command nodes
+[28Jun2026 08:26:15.373] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe sapling_tweaks:cherry_sapling_crossbread: com.google.gson.JsonSyntaxException: Unknown item 'minecraft:cherry_sapling'
+[28Jun2026 08:26:15.436] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe parcool:parcool_guide: com.google.gson.JsonSyntaxException: Unknown item 'patchouli:guide_book'
+[28Jun2026 08:26:15.465] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe sapling_tweaks:cherry_sapling_craft: com.google.gson.JsonSyntaxException: Unknown item 'minecraft:cherry_log'
+[28Jun2026 08:26:15.499] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 11 recipes
+[28Jun2026 08:26:15.523] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/simple_dungeon_bc: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'brewinandchewin:vodka'
+[28Jun2026 08:26:15.559] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/simple_dungeon_fr: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'farmersrespite:dandelion_tea'
+[28Jun2026 08:26:15.620] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/bastion_other_bc: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'brewinandchewin:red_rum'
+[28Jun2026 08:26:15.637] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:blocks/sand_filter: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'thirst:sand_filter'
+[28Jun2026 08:26:15.643] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/bastion_other_fr: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'farmersrespite:rose_hip_tea'
+[28Jun2026 08:26:15.648] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/abandoned_mineshaft_fr: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'farmersrespite:yellow_tea'
+[28Jun2026 08:26:15.654] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/abandoned_mineshaft_bc: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'brewinandchewin:beer'
+[28Jun2026 08:26:15.658] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/nether_bridge_fr: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'farmersrespite:rose_hip_tea'
+[28Jun2026 08:26:15.665] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/nether_bridge_bc: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'brewinandchewin:red_rum'
+[28Jun2026 08:26:15.720] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table parcool:grant_parcool_guide: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'patchouli:guide_book'
+[28Jun2026 08:26:15.727] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/shipwreck_supply_bc: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'brewinandchewin:mead'
+[28Jun2026 08:26:15.730] [main/ERROR] [net.minecraft.world.level.storage.loot.LootTables/]: Couldn't parse loot table thirst:chests/shipwreck_supply_fr: com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'farmersrespite:black_tea'
+[28Jun2026 08:26:15.832] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement man:thetear: Non [a-z0-9/._-] character in path of location: man:tearoftheman
+
+[28Jun2026 08:26:15.897] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1591 advancements
+[28Jun2026 08:26:16.043] [main/INFO] [CraftTweaker/]: crafttweaker.reload.start
+[28Jun2026 08:26:16.735] [main/INFO] [CraftTweaker/]: crafttweaker.reload.complete
+[28Jun2026 08:26:16.841] [main/INFO] [com.ordana.immersive_weathering.ImmersiveWeathering/]: Loaded 84 block growths configurations
+[28Jun2026 08:26:16.847] [main/INFO] [com.ordana.immersive_weathering.ImmersiveWeathering/]: Loaded 16 liquid generators configurations
+[28Jun2026 08:26:16.860] [main/INFO] [net.werdei.biome_replacer.BiomeReplacer/]: [BiomeReplacer] Loaded 0 rules (0 direct, 0 tag-based) and ignored 0
+[28Jun2026 08:26:16.861] [main/INFO] [net.werdei.biome_replacer.BiomeReplacer/]: [BiomeReplacer] No rules found, not replacing anything
+[28Jun2026 08:26:17.020] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.19.2
+[28Jun2026 08:26:17.021] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[28Jun2026 08:26:17.021] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[28Jun2026 08:26:17.021] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[28Jun2026 08:26:17.264] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[28Jun2026 08:26:17.399] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[28Jun2026 08:26:17.583] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[28Jun2026 08:26:17.583] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[28Jun2026 08:26:17.583] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[28Jun2026 08:26:17.584] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[28Jun2026 08:26:17.940] [Server thread/INFO] [FTB Teams/]: loaded team data: 2 known players, 3 teams total
+[28Jun2026 08:26:17.968] [Server thread/INFO] [configured/]: Loading server configs...
+[28Jun2026 08:26:18.021] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[28Jun2026 08:26:18.750] [Netty Epoll Server IO #1/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[28Jun2026 08:26:18.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[28Jun2026 08:26:20.521] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Jun2026 08:26:20.522] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Jun2026 08:26:20.522] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Jun2026 08:26:20.523] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Jun2026 08:26:20.813] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
+[28Jun2026 08:26:21.151] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2356 ms
+[28Jun2026 08:26:21.153] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (3.550s)! For help, type "help"
+[28Jun2026 08:26:21.324] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[28Jun2026 08:26:21.331] [Server thread/INFO] [net.stardustlabs.structory.Structory/]: Thanks for choosing Structory!
+[28Jun2026 08:26:21.332] [Server thread/INFO] [net.stardustlabs.terralith.Terralith/]: Thanks for choosing Terralith!
+[28Jun2026 08:26:21.345] [Server thread/INFO] [FTB Ranks/]: Loaded 3 ranks
+[28Jun2026 08:26:21.345] [Server thread/INFO] [atomicstryker.multimine.common.MultiMine/]: MultiMine ServerStartedEvent
+[28Jun2026 08:26:21.346] [Server thread/INFO] [atomicstryker.multimine.common.MultiMine/]: config loading now
+[28Jun2026 08:26:21.348] [Server thread/INFO] [atomicstryker.multimine.common.MultiMine/]: config loaded successfully
+[28Jun2026 08:26:21.402] [Server thread/INFO] [ModernFix/]: Instantiating Mojang DFU
+[28Jun2026 08:26:21.793] [Server thread/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
+[28Jun2026 08:26:25.812] [Netty Epoll Server IO #2/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[28Jun2026 08:26:26.677] [Server thread/INFO] [com.cupboard.Cupboard/]: Loaded config for: biomemusic.json
+[28Jun2026 08:26:26.678] [Server thread/INFO] [com.cupboard.Cupboard/]: Loaded config for: betterfpsdist.json
+[28Jun2026 08:26:26.714] [Server thread/INFO] [net.bettercombat.logic.WeaponRegistry/]: Encoded Weapon Attribute registry size (with package overhead): 10142 bytes (in 2 string chunks with the size of 10000)
+[28Jun2026 08:26:26.716] [Server thread/WARN] [voicechat/]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[28Jun2026 08:26:26.728] [Server thread/WARN] [ModernFix/]: Dedicated server took 46.557 seconds to load
+[28Jun2026 08:26:26.736] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice chat server started at port 24454
+[28Jun2026 08:26:31.690] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class tschipp.carryon.common.carry.CarryOnDataManager
+[28Jun2026 08:26:31.744] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@4c612730
+[28Jun2026 08:26:31.793] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: MrAgic_YT[/127.147.143.38:35479] logged in with entity id 44 at (-560.6999999880791, 57.0, 0.699999988079071)
+[28Jun2026 08:26:31.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [PVP] MrAgic_YT joined the game
+[28Jun2026 08:26:32.085] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of MrAgic_YT (20)
+[28Jun2026 08:26:32.087] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to MrAgic_YT
+[28Jun2026 08:26:32.098] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Limitation of 088e63f7-2470-3149-9969-d09ec93dc472 was loaded
+[28Jun2026 08:26:32.100] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Sent Server Limitation of [MrAgic_YT]
+[28Jun2026 08:26:32.100] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Received Client Information of [MrAgic_YT]
+[28Jun2026 08:26:32.103] [Server thread/INFO] [de.keksuccino.fancymenu.networking.packets.handshake.ServerSideHandshakePacketLogic/]: [FANCYMENU] A client with FancyMenu installed joined the server: MrAgic_YT
+[28Jun2026 08:26:32.877] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@68bc6425
+[28Jun2026 08:26:32.902] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: jonin[/127.172.110.162:59485] logged in with entity id 184 at (-560.6666373260852, 57.0, -0.41149190391389584)
+[28Jun2026 08:26:32.940] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [PEACE] jonin joined the game
+[28Jun2026 08:26:33.407] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of jonin (20)
+[28Jun2026 08:26:33.408] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to jonin
+[28Jun2026 08:26:33.547] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Limitation of 06ce88a1-d626-31bb-907c-f1f610de0f93 was loaded
+[28Jun2026 08:26:33.547] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Sent Server Limitation of [jonin]
+[28Jun2026 08:26:33.548] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Received Client Information of [jonin]
+[28Jun2026 08:26:33.853] [Server thread/INFO] [de.keksuccino.fancymenu.networking.packets.handshake.ServerSideHandshakePacketLogic/]: [FANCYMENU] A client with FancyMenu installed joined the server: jonin
+[28Jun2026 08:26:42.843] [Server thread/INFO] [atomicstryker.multimine.common.MultiMine/]: Serverside BlockPos hacked: 2
+[28Jun2026 08:29:31.596] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: jonin lost connection: Disconnected
+[28Jun2026 08:29:31.596] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [PEACE] jonin left the game
+[28Jun2026 08:29:31.599] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Limitation of 06ce88a1-d626-31bb-907c-f1f610de0f93 was unloaded
+[28Jun2026 08:29:31.601] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client jonin
+[28Jun2026 08:29:36.142] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: MrAgic_YT lost connection: Disconnected
+[28Jun2026 08:29:36.142] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [PVP] MrAgic_YT left the game
+[28Jun2026 08:29:36.143] [Server thread/INFO] [com.alrex.parcool.ParCool/]: Limitation of 088e63f7-2470-3149-9969-d09ec93dc472 was unloaded
+[28Jun2026 08:29:36.143] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client MrAgic_YT
+[28Jun2026 08:29:46.460] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[28Jun2026 08:29:46.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[28Jun2026 08:29:46.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[28Jun2026 08:29:46.981] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[28Jun2026 08:29:47.025] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[28Jun2026 08:29:47.027] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[28Jun2026 08:29:47.029] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/man:halucination
+[28Jun2026 08:29:47.083] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[28Jun2026 08:29:47.084] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[28Jun2026 08:29:47.084] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[28Jun2026 08:29:47.084] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (halucination): All chunks are saved
+[28Jun2026 08:29:47.084] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[28Jun2026 08:29:47.103] [Server thread/INFO] [FTB Chunks/]: Shutting down map thread
+[28Jun2026 08:29:47.104] [Server thread/INFO] [configured/]: Unloading server configs...
+[28Jun2026 08:29:47.105] [Server thread/INFO] [configured/]: Sending config unload event for configured.developer.toml
